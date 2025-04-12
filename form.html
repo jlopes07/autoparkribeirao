@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Park Ribeirão - Reserva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Faça sua Reserva</h1>
+    </header>
+    <main>
+        
+        <p>Garanta comodidade e segurança ao estacionar. Preencha o formulário abaixo e reserve sua vaga com rapidez e praticidade. Estamos prontos para receber você!</p>
+        <section>
+            <h2>Informe seus dados</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="embarque">Data de embarque:<br></label>
+                    <input type="date" id="embarque" name="embarque"><br>                
+                    <label for="desembarque">Data de desembarque:<br></label>
+                    <input type="date" id="desembarque" name="desembarque"><br>
+                    <label for="name">Nome:<br></label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome..."><br>
+                    <label for="email">E-mail:<br></label>
+                    <input type="email" id="email" name="email" placeholder="nome@email.com"><br>
+                    <label for="telefone">Telefone:<br></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$" required><br>
+                    <label for="veiculo">Modelo do veículo:<br></label>
+                    <input type="text" id="veiculo" name="veiculo" placeholder="Digite seu veículo..."><br>
+                    <label for="placa">Placa:<br></label>
+                    <input type="text" id="placa" name="placa"  placeholder="Digite a placa do veículo..."><br>
+                    <label for="comments">Observações:<br></label>
+                    <textarea name="comments" id="comments" rows="5" cols="70" placeholder="Digite aqui..."></textarea><br>
+                    <button onclick="alert('Dados enviados')">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="paragrafo-footer">&copy Auto Park Ribeirão. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
