@@ -15,27 +15,27 @@
         
         <p>Garanta comodidade e segurança ao estacionar. Preencha o formulário abaixo e reserve sua vaga com rapidez e praticidade. Estamos prontos para receber você!</p>
         <section>
-            <h2>Informe seus dados</h2>
-            <form>
+            <h2 style="text-align: center;">Informe seus dados</h2>
+            <form action="https://formsubmit.co/ajax/autoparkribeirao@gmail.com" method="POST">
                 <fieldset>
                     <legend>Informações de contato</legend>
                     <label for="embarque">Data de embarque:<br></label>
-                    <input type="date" id="embarque" name="embarque"><br>                
+                    <input type="date" id="embarque" name="embarque" required><br>                
                     <label for="desembarque">Data de desembarque:<br></label>
-                    <input type="date" id="desembarque" name="desembarque"><br>
+                    <input type="date" id="desembarque" name="desembarque" required><br>
                     <label for="name">Nome:<br></label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome..."><br>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome..." required><br>
                     <label for="email">E-mail:<br></label>
-                    <input type="email" id="email" name="email" placeholder="nome@email.com"><br>
+                    <input type="email" id="email" name="email" placeholder="nome@email.com" required><br>
                     <label for="telefone">Telefone:<br></label>
                     <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$" required><br>
                     <label for="veiculo">Modelo do veículo:<br></label>
-                    <input type="text" id="veiculo" name="veiculo" placeholder="Digite seu veículo..."><br>
+                    <input type="text" id="veiculo" name="veiculo" placeholder="Digite seu veículo..." required><br>
                     <label for="placa">Placa:<br></label>
-                    <input type="text" id="placa" name="placa"  placeholder="Digite a placa do veículo..."><br>
+                    <input type="text" id="placa" name="placa"  placeholder="Digite a placa do veículo..." required><br>
                     <label for="comments">Observações:<br></label>
                     <textarea name="comments" id="comments" rows="5" cols="70" placeholder="Digite aqui..."></textarea><br>
-                    <button onclick="alert('Dados enviados')">Enviar</button>
+                    <button type="submit" onclick="alert('Dados enviados')">Enviar</button>
                 </fieldset>
             </form>
         </section>
