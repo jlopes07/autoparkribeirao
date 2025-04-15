@@ -7,20 +7,20 @@
 }
 
 h1{
-    font-size: 3.5rem;
-    height: 8rem;
+    font-size: 3rem;
+    height: 5rem;
 }
 
 h2{
     color: #28373c;
     font-size: 2.5rem;
-    margin-bottom: 1rem; /* espaço abaixo do h2 */
+    margin-bottom: 1rem; 
 }
   
 p{
     font-size: 1.5rem;
-    margin-bottom: .5rem; /* espaço abaixo de cada parágrafo */
-    line-height: 1.5; /* melhora a leitura entre as linhas */
+    margin-bottom: .5rem; 
+    line-height: 1.5; 
 }
 
 a{
@@ -96,7 +96,7 @@ nav{
         gap: 0.5rem;
         padding-top: 2rem;
         transform: translateX(100%);
-        visibility: hidden; /* Isso vai ocultar o menu no estado inicial */
+        visibility: hidden; 
         transition: transform 0.3s ease-in;
     }
 
@@ -112,7 +112,7 @@ nav{
 
 .nav-list.active{
     transform: translateX(0);
-    visibility: visible; /* Quando ativado, o menu fica visível */
+    visibility: visible; 
     transition: transform 0.3s ease-in, visibility 0s 0s;  
 }
 
@@ -147,7 +147,7 @@ body{
 }
 
 header{
-    padding: 2rem;
+    padding-top: 2rem;
     background-color: #28373c;
     color: #e9e9e9;
     text-align: center;
@@ -171,7 +171,7 @@ fieldset{
     border: 2px solid #434343;
     border-radius: 5px;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 70%;
 }
 
@@ -184,15 +184,23 @@ input:not([type="date"]):not([type="tel"]), textarea{
     width: 100%;
 }
 
-button {
-    display: block;
-    margin: 0 auto;
-    width: 20%;
+input{
+    height: 2rem;
 }
 
-
-textarea{
+input, textarea{
+    border: 0.125rem solid transparent;
     border-radius: 5px;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus{
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.1rem #28373c;
 }
 
 button{
@@ -200,8 +208,16 @@ button{
     border: none;
     padding: .8rem;
     color: #e9e9e9;
-    border-radius: 5px;
+    border-radius: 99px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background-color: #8f8f8f;
 }
 
 .logo-container{
