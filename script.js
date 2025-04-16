@@ -51,9 +51,18 @@ class FormSubmit{
         
     }
 
+    applyInputMasks(){
+        const telefoneInput = this.form.querySelector("#telefone");
+        if (telefoneInput && typeof Inputmask !== "undefined") {
+            Inputmask({"mask": "(99) 99999-9999"}).mask(telefoneInput);
+        }
+    }
+
     init(){
-        if(this.form) 
+        if(this.form) {
             this.formButton.addEventListener("click", this.sendForm);
+            this.applyInputMasks();
+        }
         return this;
     }
 }
@@ -61,7 +70,8 @@ class FormSubmit{
 const formSubmit = new FormSubmit({
     form: "[data-form]",
     button: "[data-button]",
-    success: "<h2 class='success'>Mensagem enviada!</h2>",
-    error: "<h2 class='error'>Não foi possível enviar sua mensagem.</h2>",
+    success: "<h3 class='success'>Mensagem enviada!</h3>",
+    error: "<h3 class='error'>Não foi possível enviar sua mensagem.</h3>",
 });
 formSubmit.init();
+

@@ -24,7 +24,7 @@
                     <label for="desembarque">Data de desembarque:<br></label>
                     <input type="date" id="desembarque" name="desembarque" required><br>
                     <label for="name">Nome:<br></label>
-                    <input type="text" id="name" name="name" placeholder="Digite seu nome..." required><br>
+                    <input type="text" id="name" name="nome" placeholder="Digite seu nome..." required><br>
                     <label for="email">E-mail:<br></label>
                     <input type="email" id="email" name="email" placeholder="nome@email.com" required><br>
                     <label for="telefone">Telefone:<br></label>
@@ -34,14 +34,16 @@
                     <label for="placa">Placa:<br></label>
                     <input type="text" id="placa" name="placa"  placeholder="Digite a placa do veículo..." required><br>
                     <label for="comments">Observações:<br></label>
-                    <textarea name="comments" id="comments" rows="5" cols="70" placeholder="Digite aqui..."></textarea><br>
+                    <textarea name="comentario" id="comments" rows="5" cols="70" placeholder="Digite aqui..."></textarea><br>
                     <button type="submit" data-button>Enviar</button>
                 </fieldset>
             </form>
         </section>
     </main>
     <div id="footer-container"></div>
-        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/bindings/inputmask.binding.min.js"></script>
     <script src="menu.js"></script>
     <script src="script.js"></script>
     <script src="mobile-navbar.js"></script>
